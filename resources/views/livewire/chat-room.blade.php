@@ -1,3 +1,3 @@
 <div>
-    Hello world
+    Chat room
 </div>
