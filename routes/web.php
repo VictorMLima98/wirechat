@@ -13,5 +13,5 @@ Route::group([
 Route::group([
     'middleware' => 'auth'
 ], function () {
-    Route::get('/', ChatRoom::class);
+    Route::get('/', ChatRoom::class)->name('chat-room');
 });
