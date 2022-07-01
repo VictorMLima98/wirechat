@@ -50,12 +50,12 @@ class ChatRoom extends Component
 
     private function showMessage(Message $message)
     {
-        $this->allMessages->push($message);
+        $this->allMessages->prepend($message);
     }
 
     private function fillMessages(): void
     {
-        $this->allMessages = Message::with('user')->get();
+        $this->allMessages = Message::with('user')->orderBy('id', 'DESC')->get();
     }
 
     private function emptyMessage(): void

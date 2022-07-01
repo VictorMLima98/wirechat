@@ -1,7 +1,7 @@
 
 <div class="flex flex-col justify-between flex-1 h-screen p:2 sm:p-6">
     <div id="messages"
-        class="flex flex-col p-3 overflow-y-auto scrolling-touch scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2">
+        class="flex flex-col-reverse p-3 overflow-y-auto scrolling-touch scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2">
 
         @forelse($allMessages as $message)
             @switch($message->user->id)
