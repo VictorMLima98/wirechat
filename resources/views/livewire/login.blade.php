@@ -35,7 +35,7 @@
 
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <input id="remember-me" name="remember-me" type="checkbox" wire:model.defer="rememberMe"
+                    <input id="remember-me" name="remember-me" type="checkbox" wire:model.defer="remember"
                         class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
                     <label for="remember-me" class="block ml-2 text-sm text-gray-900"> Remember me </label>
                 </div>
